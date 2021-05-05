@@ -31,6 +31,13 @@ app.use(cors());
 
 //-------------------------------------------------------------------------//
 
+//== initialize folder that conatin our static files for project ==//
+//== start ==//
+app.use(express.static('website'));
+//== end ==//
+
+//-------------------------------------------------------------------------//
+
 //==app router ==//
 //== start ==//
 
@@ -43,7 +50,7 @@ app.use(cors());
 //== declare server listening ==//
 //== start ==//
 
-//intialize port that server will run on it 
+//initialize port that server will run on it 
 const PORT = process.env.PORT || 3000;
 
 // start server to listen to comming requests
