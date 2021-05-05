@@ -1,0 +1,26 @@
+{
+  "name": "weather-journal-app",
+  "version": "1.0.0",
+  "description": "this is weather journal app to save user feeling oput different weather states",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yossefAlatter/weather-journal-app.git"
+  },
+  "keywords": ["weather", "feeling"],
+  "author": "yossef alatter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yossefAlatter/weather-journal-app/issues"
+  },
+  "homepage": "https://github.com/yossefAlatter/weather-journal-app#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
