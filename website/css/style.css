@@ -1,0 +1,207 @@
+/** reset spaces for all elements **/
+/** start **/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/** end **/
+
+/** body style that will inheiret for all elements **/
+/** start **/
+body{
+    font-family: 'Risque', cursive;
+    position: relative;
+    background-color: #ffffffb0;
+}
+/** end **/
+
+/** app background style **/
+/** start **/
+.app-bg{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+.app-bg img{
+    width: 100%;
+    height: 100%;
+}
+/** end **/
+
+/** app structure style **/
+/** start **/
+.app-structure{
+    position: relative;
+    max-width: 1990px;
+    margin: auto;
+}
+.app-structure .layout{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+/* app left side style */
+.app-structure .layout .app-left-side{
+    width: 50%;
+}
+.app-structure .layout .app-left-side h2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 52px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+.app-structure .layout .app-left-side form{
+    font-family: 'Risque', cursive;
+}
+.app-structure .layout .app-left-side form .mirror-shap{
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.46);
+    border-radius: 4px;
+}
+.app-structure .layout .app-left-side form .input-group label{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+.app-structure .layout .app-left-side form .input-group input[type="text"]{
+    height: 58px;
+    width: 429px;
+    margin-top: 10px;
+}
+.app-structure .layout .app-left-side form .input-group input[type="text"].checked{
+    border: 2px solid rgb(42, 30, 73);
+}
+.app-structure .layout .app-left-side .mirror-shap::placeholder, .app-structure .layout .app-left-side form .mirror-shap{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(42, 30, 73, 0.53);
+    font-family: 'Risque', cursive;
+}
+.app-structure .layout .app-left-side form .mirror-shap{
+    color: rgb(42, 30, 73);
+    padding: 15px;
+}
+.app-structure .layout .app-left-side form .radio-con {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+.app-structure .layout .app-left-side form .radio-con input[type="radio"]{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.app-structure .layout .app-left-side form .radio-con .custom-radio{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: rgba(255, 255, 255, 0.46);
+    border-radius: 50%;
+}
+.app-structure .layout .app-left-side form .radio-con:hover input[type="radio"] ~ .custom-radio {
+    background: rgba(255, 255, 255, 0.46);
+}
+.app-structure .layout .app-left-side form .radio-con input[type="radio"]:checked ~ .custom-radio {
+    background: #2A1E49;
+}
+.app-structure .layout .app-left-side form textarea {
+    width: 462px;
+    height: 143px;
+    margin-top: 8px;
+    border: 2px solid rgba(42, 30, 73) !important;
+}
+.app-structure .layout .app-left-side form .btn-con button{
+    border: none;
+    outline: none;
+    font-family: 'Risque', cursive;
+    background: #2A1E49;
+    border-radius: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    color: #FFFFFF;
+    width: 461px;
+    padding: 8px;
+    margin-top: 35px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.app-structure .layout .app-left-side form .btn-con button:hover{
+    background-color: #FFFFFF;
+    color: #2A1E49;
+}
+
+/* app right side style */
+.app-structure .layout .app-right-side{
+    width: 50%;
+}
+.app-structure .layout .app-right-side p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 136px;
+    line-height: 180px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-align: center;
+    width: 100%;
+    padding-top: 47px;
+}
+
+/** end **/
+
+/** app structure medis **/
+/** start **/
+@media screen and (max-width: 990px) {
+    .app-structure .layout{
+        flex-direction: column-reverse;
+    }
+    .app-structure .layout .app-left-side, .app-structure .layout .app-right-side{
+        min-width: 100%;
+    }
+    .app-structure .layout .app-left-side form .btn-con button,
+    .app-structure .layout .app-left-side form textarea{
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .app-structure .layout .app-right-side p{
+        font-size: 90px;
+        line-height: 0;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .app-structure .layout .app-left-side h2{
+        text-align: center;
+    }
+    .app-structure .layout .app-left-side form .btn-con button{
+        margin-bottom: 70px;
+    }
+
+}
+@media screen and (max-width: 400px){
+    .app-structure .layout .app-left-side form .input-group input[type="text"]{
+        min-width: 85%;
+        max-width: 85%;
+    }
+    .app-structure .layout .app-right-side p{
+        font-size: 70px;
+    }
+}
+/** end **/

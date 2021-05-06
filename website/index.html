@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
 
+    <!-- font Risque style sheet -->
+    <!-- start -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Risque&display=swap" rel="stylesheet">
+    <!-- end -->
+
     <!-- style file -->
     <!-- start -->
     <link rel="stylesheet" href="./css/style.css">
@@ -13,7 +19,68 @@
 
 </head>
 <body>
-    <h2>Welcome bitch</h2>
+
+    <!-- app background -->
+    <!-- start -->
+    <div class="app-bg">
+        <img src="./images/bg.webp" alt="background" />
+    </div>
+    <!-- end -->
+
+    <!-- app structure -->
+    <!-- start -->
+    <div class="app-structure">
+        <div class="layout">
+            
+            <!-- app left side -->
+            <!-- start -->
+            <div class="app-left-side">
+                <h2>Welcome in my weather journal  to search about weather</h2>
+                <form id="weatherform">
+                    <div class="input-group">
+                        <label>choose the way to inidcate city ..</label>
+                        <div style="display: flex;align-items: center;">
+                            <label class="radio-con">
+                                <input class="mirror-shap" type="radio" name="input_way" id="check_zipcode"/>
+                                <span class="custom-radio"></span>
+                            </label>
+                            <input class="mirror-shap" type="text" name="zipcode" id="zipcode" placeholder="city zip code ..."  disabled/>
+                        </div>
+                        <div style="display: flex;align-items: center;">
+                            <label class="radio-con">
+                                <input class="mirror-shap" type="radio" name="input_way" id="check_city" checked/>
+                                <span class="custom-radio"></span>
+                            </label>
+                            <input class="mirror-shap checked" type="text" name="city" id="city" placeholder="city name ..." />
+                        </div>
+                        <label style="display: block;margin-top: 15px;">Enter your Feeling about weather</label>
+                        <textarea class="mirror-shap" name="feel" id="feel" cols="30" rows="10" placeholder="what do you feel about weather ?"></textarea>
+                        <div class="btn-con">
+                            <button type="submit">Search</button>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+            <!-- end -->
+
+
+            <!-- app right side -->
+            <!-- start -->
+            <div class="app-right-side">
+
+                <p><span id="clock"></span><sub id="clockmode"></sub></p>
+
+                <div class="result">
+
+                </div>
+
+            </div>
+            <!-- end -->
+
+        </div>
+    </div>
+    <!-- end -->
 
 
     <!-- main.js script -->
