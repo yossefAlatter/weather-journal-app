@@ -24,14 +24,14 @@ you must have according software
 - npm
 - git 
 if you want to develop that project you will need install also nodemon by running that command
-"""
+```
 npm install -g nodemon
-"""
+```
 
 --- 
 ## Installations Steps
 
- """
+ ```
 // to clone repo
  git clone https://github.com/yossefAlatter/weather-journal-app.git  
  
@@ -46,12 +46,12 @@ npm install -g nodemon
  // Or
  // to run node for see product
  npm run start
- """
+ ```
 
  ---
  ## Project Structure
 
- """
+ ```
  website
     css
         - style.css
@@ -66,7 +66,7 @@ npm install -g nodemon
  - package.json
  - README.md
  - server.js
- """
+ ```
 
  ---
- 
+
