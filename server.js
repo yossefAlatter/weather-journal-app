@@ -38,10 +38,32 @@ app.use(express.static('website'));
 
 //-------------------------------------------------------------------------//
 
+//== initialize data storage ==//
+//== start ==//
+let projectData = {};
+//== end ==//
+
+//-------------------------------------------------------------------------//
+
 //==app router ==//
 //== start ==//
 
+app.post('/saveData', (req, res)=>{
+    let newData = {
+        city: req.body.city,
+        weatherState: req.body.weatherState,
+        temp: req.body.temp,
+        userFeel: req.body.userFeel,
+        weatherIcon: req.body.weatherIcon,
+        currentTime: req.body.currentTime
+    }
+    projectData = newData;
+    res.end();
+});
 
+app.get('/getData', (req, res)=>{
+    res.send(projectData);
+});
 
 //== end ==//
 

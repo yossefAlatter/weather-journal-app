@@ -2,7 +2,7 @@
   "name": "weather-journal-app",
   "version": "1.0.0",
   "description": "this is weather journal app to save user feeling oput different weather states",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "start": "node app",
     "dev": "nodemon app" 
